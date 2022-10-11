@@ -35,7 +35,7 @@ data_load_state.text('Loading data...done')
 #Step4 Raw Data Visualization
 st.subheader('Raw Data')
 st.write(data.tail())
-st.data.describe()
+#st.data.describe()
 
 def plot_raw_data():
     fig = go.Figure()

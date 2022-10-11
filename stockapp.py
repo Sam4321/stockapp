@@ -43,7 +43,7 @@ def plot_raw_data():
     fig.add_trace(go.Scatter(x=data['Date'],y=data['Close'],name='stock_close'))
     fig.layout.update(title_text='Time Series Data',xaxis_rangeslider_visible=True)
     st.plotly_chart(fig)
-plot_raw_data
+plot_raw_data()
 
 #Step5 Forecasting with prophet library
 df_train = data[['Date','Close']]
